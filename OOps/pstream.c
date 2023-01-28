@@ -239,7 +239,7 @@ static void adsyn_frame(CSOUND *csound, PVADS *p)
 
       for (j=0;j < p->overlap;j++) {
         outbuf[j] += thisamp *  fastoscil(a+i,x+i,y+i);
-        thisamp += delta_amp;
+        /*thisamp += delta_amp; */
       }
       lastamps[i] = amps[i];
     }
